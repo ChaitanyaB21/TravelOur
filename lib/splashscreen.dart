@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:travel_our/login.dart';
+import 'package:travel_our/register.dart';
 import 'Homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -38,7 +40,12 @@ class MyApp extends StatelessWidget {
                 width: 200, // set the width of the button
                 height: 40, // set the height of the button
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginScreen()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor:
                         Color.fromRGBO(86, 77, 165, 1), // Background color
@@ -56,5 +63,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Widget Homepage() {
+    return HomePage();
   }
 }

@@ -8,7 +8,7 @@
             "name": "TravelOur",
             "request": "launch",
             "type": "dart",
-            
+            "program": "lib/splashscreen.dart",
         },
         {
             "name": "TravelOur (profile mode)",
